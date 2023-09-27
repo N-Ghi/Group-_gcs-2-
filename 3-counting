@@ -4,4 +4,5 @@ read -r phrase
 word_count=$(echo "$phrase" | wc -w)
 space_count=$(echo "$phrase" | tr -cd ' ' | wc -c)
 echo "The number of words is $word_count"
-echo "The number of white spaces is $space_count" 
+echo "The number of white spaces is $space_count"
+
