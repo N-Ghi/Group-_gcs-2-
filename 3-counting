@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 echo "enter a phrase: "
 read -r phrase
 word_count=$(echo "$phrase" | wc -w)
