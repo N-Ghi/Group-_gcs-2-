@@ -1,0 +1,10 @@
+#!/bin/bash
+num1=$RANDOM
+num2=$RANDOM
+sqr1=$(echo "scale=0; sqrt($num1)" | bc)
+sqr2=$(echo "scale=0; sqrt($num2)" | bc)
+echo "The first random number generated is $num1"
+echo "The square root is $sqr1"
+echo "The second random number generated is $num2"
+echo "The square root is $sqr2"
+echo "The sum of their square roots is $(($sqr1+$sqr2))"
