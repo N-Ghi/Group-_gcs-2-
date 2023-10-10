@@ -1,12 +1,8 @@
 #!/usr/bin/env bash
+directory="negpod_7-q1"
 
-directory_name="negpod_7-q1"
-
-if [ ! -d "directory_name" ]; then
-	mkdir "directory_name"
+if [ ! -d "$directory" ]; then
+	mkdir "$directory"
 fi
 
-mv main.sh "directory_name"
-mv students-list_0923.txt "directory_name"
-mv select-emails.sh "directory_name"
-mv student-emails.txt "directory_name"
+mv main.sh students-list_0923.txt select-emails.sh student-emails.txt "$directory"
